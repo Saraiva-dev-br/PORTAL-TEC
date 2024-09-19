@@ -1,0 +1,282 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f2f5; /* Alterado para um tom mais claro e neutro */
+    color: #333; /* Texto em um tom escuro para melhor legibilidade */
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: #0056b3; /* Azul escuro para links */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #003d79; /* Azul mais escuro ao passar o mouse */
+}
+
+/* Listas */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+/* Header */
+header {
+    background-color: #003d79); /* Gradiente suave com azul */
+    color: #ffffff;
+    padding: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-menu li a {
+    color: #ffffff;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    color: #007bff; /* Azul claro para destaque */
+    background-color: rgba(255, 255, 255, 0.1); /* Fundo mais suave ao passar o mouse */
+}
+
+/* Video Banner */
+.video-banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-top: 60px;
+}
+
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Main Content */
+.content-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 40px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 60px;
+    height: 5px;
+    background-color: #007bff; /* Azul claro para o destaque */
+    border-radius: 5px;
+}
+
+/* News Section */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.news-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.news-item h3 {
+    font-size: 1.5rem;
+    color: #007bff; /* Azul claro para títulos */
+    margin-bottom: 10px;
+}
+
+.news-item p {
+    line-height: 1.5;
+    color: #666; /* Cinza médio para o texto */
+}
+
+.news-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* Highlights Section */
+.highlights {
+    margin-bottom: 40px;
+}
+
+.highlight-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.highlight-item {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlight-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.highlight-item h3 {
+    font-size: 1.3rem;
+    color: #ff6600; /* Laranja para destaques */
+    margin-bottom: 10px;
+}
+
+.highlight-item p {
+    color: #555; /* Cinza escuro para o texto */
+    line-height: 1.5;
+}
+
+.highlight-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Advertising Section */
+.advertising {
+    background-color: #222; /* Cinza escuro para anúncios */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.2rem;
+    margin-top: 40px;
+}
+
+/* Footer */
+footer {
+    background-color: #111; /* Preto para o rodapé */
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-container a {
+    color: #007bff; /* Azul claro para links no rodapé */
+    margin: 0 10px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-container a:hover {
+    color: #0056b3; /* Azul escuro ao passar o mouse */
+}
+
+.footer-container p {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Responsiveness */
+@media (max-width: 992px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .highlight-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+}
